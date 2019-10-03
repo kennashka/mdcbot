@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MDC Self Driving Car</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html><html><head>
+    <!-- Webmaker metas -->
+    
+	<meta content="holidayalbum" name="webmaker:tags">
+    
+    
+    <!--
+    What you'll Learn
+    ******************
+    - You'll be introduced to using CSS3 styles and transitions to create a polaroid photo album.
+    - You'll be asked to create some more images in the gallery.
+
+    Tasks
+    ****************
+    Task 1) Import and use a font from Google fonts.
+    Task 2) Add some more images to your gallery.
+    -->
+
+    <!--         
+        A good place to start is with the title. Personalize the title of your
+        page by changing the text within the <title></title> tags.
+-->
+
+    <!-- 
+        Task 1 - Import and use a font from Google fonts.
+        ************************************************************
+        When you want to get really creative sometimes the standard fonts are not enough. Luckily you can choose many
+        different fonts online and import them to use in your project. A great place to look is Google Fonts. https://www.google.com/fonts/
+        When you find a font you like click the Quick-use button and follow the instuctions.
+        
+        We have selected a font below that we think works well. The first thing to do is import it into the site, you use the <link> tag to do that.
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
+    <!-- 
+        The CSS code below applies this font to the tags we want. We are selecting to add it to H2, H3 and H4 tags which are headings.
+    -->
+    <style>
+        h1, h2, h3, h4 {
+            /* The font-family style will apply our font 'Indie Flower' to the headings.*/
+            font-family: 'Indie Flower', cursive;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        We start with a header tag, this defines the content for the header of the page.
+    -->
+    <header>
+        <div class="wrapper group">
+            <!-- 
+                This is a <h1> Heading. We have created a simple logo by using CSS3 borders. You can change the CSS to create an alternate logo
+                or you could try replacing the logo with an image.
+            -->
+            <h1 class="logo">MDC Self Driving Car Hardware List</h1>
+            
+            
+            <!-- 
+                This is a <h2> Heading.  It is an important tag on the page but not as important as the main <h1>.
+                The heading order goes from <h1> being the most important to <h6> being the least important.
+                    
+                Try changing the text to name your page.
+            -->
+        </div>
+    </header>
+
+    <div class="wrapper group">
+        
+        <section id="content">    
+            <!--
+                Photos are inside an unordered list (ul). 
+                It behaves much like an ordered list but is more appropriate here because the order of the photos is unimportant.
+                The images are placed inside individual list items (li).
+                As the images are wrapped inside a link <a> tag they are clickable.  When clicked they will go to the address in the 'href' of the <a> tag.
+    
+                Task 2) - Add some more images to your gallery.
+                ****************************************************************************
+                
+                It's really easy to add some more photos to your gallery. Just copy the the <li></li> tags below (including the content inside) and paste under the last <li></li> tag.
+                When you've done that make sure to change the link and image src. We've explained what you need to do below:
+                
+            -->
+            <ul class="grid half-width group">
+                
+                <!-- 
+                    The picture below is contained in a <li> which h
+                -->
+                <li class="zoom-on-hover">
+                    <!--
+                        <a> This is a link tag. It creates a link to another page on the internet.
+                        If you want to change where the link goes just paste the new link between the "" below.
+                    -->
+                    <a href="https://www.amazon.com/gp/product/B06VTP8XBQ/ref=ox_sc_act_title_1?smid=AZ7YXD2PTX165&psc=1">
+                        <div class="image">
+                            <!--
+                               <img> This is the img tag. We are using images from flickr but you could use images
+                               from nearly anywhere online. If you have your own Flickr or Instagram account then you can use those.
+                               Just change the 'src' below to point to your image.
+                            -->
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/61NYviSiTaL._SX425_.jpg">
+                            <div class="caption">
+                                <h2>4 wheel 2 layer Robot Smart Car Chassis Kits with Speed Encoder for Arduino DIY</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+              
+                <!-- 
+                    A picture 
+                -->
+                <li class="zoom-on-hover">
+                    <a href="https://www.amazon.com/gp/product/B014KMHSW6/ref=ox_sc_act_title_1?smid=A12MRQC2NA7LMA&psc=1">
+                        <div class="image">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/61WfXoPO-tL._SY355_.jpg">
+                            <div class="caption">
+                                <h2>L298N Motor Drive Controller Board Module Dual H Bridge DC Stepper For Arduino</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                <!-- 
+                    A picture 
+                -->
+                <li class="zoom-on-hover">
+                    <a href="https://www.amazon.com/gp/product/B07K13SSVS/ref=ox_sc_act_title_1?smid=A1KL49E6INLWJH&psc=1">
+                        <div class="image">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/61LYx0WfEmL._SL1500_.jpg">
+                            <div class="caption">
+                                <h2>16800mAh External Battery,2 USB Outputs Portable Charger Power Bank with Type C Input</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                <!-- 
+                    A picture 
+                -->
+                <li class="zoom-on-hover">
+                    <a href="https://www.amazon.com/gp/product/B01CMC50S0/ref=ox_sc_act_title_6?smid=AAU5UPIIBDRLP&psc=1">
+                        <div class="image">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/81HN4z3avRL._SL1500_.jpg">
+                            <div class="caption">
+                                <h2>Raspberry Pi 3 B+ Computer with Heatsinks</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                  <li class="zoom-on-hover">
+                    <a href="https://www.amazon.com/gp/product/B01ER2SKFS/ref=ox_sc_act_title_2?smid=AYY3UP8OL9FV8&psc=1">
+                        <div class="image">
+                            <img src="https://www.raspberrypi.org/homepage-9df4b/static/621b26de7977c5b8d765b3003b341a49/bc3a8/68fe7e4cb53767ad6c033bf3b46da3452188a24a_pi-camera-front-1-1426x1080.jpg">
+                            <div class="caption">
+                                <h2>Raspberry Pi Camera Module V2-8 Megapixel,1080p</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                  <li class="zoom-on-hover">
+                    <a href="https://www.amazon.com/gp/product/B07BQN1MNN/ref=ox_sc_act_title_5?smid=A2NBN5PD2G7LDZ&psc=1">
+                        <div class="image">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/71kho3sJZaL._SL1500_.jpg">
+                            <div class="caption">
+                                <h2>Raspberry Pi Case with Heatsink </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                  <li class="zoom-on-hover">
+                    <a href="https://www.amazon.com/gp/product/B00I6LJ19G/ref=ox_sc_act_title_1?smid=AM0JQO74J587C&psc=1">
+                        <div class="image">
+                            <img src="https://cdn-shop.adafruit.com/1200x900/1648-00.jpg">
+                            <div class="caption">
+                                <h2>Flex Cable for Raspberry Pi Camera or Display - 300mm / 12"</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                  <li class="zoom-on-hover">
+                    <a href="https://www.amazon.com/gp/product/B01EWOE0UU/ref=ox_sc_act_title_4?smid=A2WWHQ25ENKVJ1&psc=1">
+                        <div class="image">
+                            <img src="https://topcomphardware.com/comp/top-0-18507-0-0.jpg">
+                            <div class="caption">
+                                <h2>R3 Board ATmega328P ATMEGA16U2 with USB Cable Compatible with Arduino IDE Projects, RoHS Compliant</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                  <li class="zoom-on-hover">
+                    <a href="https://www.amazon.com/gp/product/B0143RTB1E/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1">
+                        <div class="image">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/61N-XCvFlSL._SX466_.jpg">
+                            <div class="caption">
+                                <h2>SanDisk Ultra 16GB Class 10 SDHC UHS-I Memory Card up to 80MB/s (SDSDUNC-016G-GN6IN)</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                  <li class="zoom-on-hover">
+                    <a href="https://www.amazon.com/gp/product/B07F58F17D/ref=ox_sc_act_title_1?smid=ATCVC199CHVK0&psc=1">
+                        <div class="image">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/812fMnPPc3L._SX425_.jpg">
+                            <div class="caption">
+                                <h2>Alligator Clip to USB Male Test Wire Adapter Red Black Wire Alligator Clip Test Cable 60cm (Pack of 2)</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                  <li class="zoom-on-hover">
+                    <a href="https://www.amazon.com/gp/product/B01LONQ7R6/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1">
+                        <div class="image">
+                            <img src="https://m.media-amazon.com/images/S/aplus-media/sota/d64081a4-1ee3-459e-80b1-595afb5c648b._SR300,300_.jpg">
+                            <div class="caption">
+                                <h2>AmazonBasics USB Type-C to Micro-B 2.0 Short Charger Cable - 6 Inches (15.2 Centimeters) - Black</h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+    
+    </div>
+    
+    <!--
+        This is the footer of the page.
+        We have used it to credit the sources of the content on this page
+        if they haven't been credited elsewhere. To be a good net citizen
+        you should do the same :)
+    -->
+    <footer>
+        <div class="footer-wrap">
+        </div>
+    </footer>
+
+
+  
+</body></html>
+<!-- partial -->
+  
+</body>
+</html>

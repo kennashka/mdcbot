@@ -25,6 +25,10 @@ app.get('/', function(req, res) {
     res.render('page/index');
 });
 
+app.get('/assemble', function(req, res) {
+    res.render('page/assemble');
+});
+
 
 
 app.listen(80, () => console.log('Server started...'));

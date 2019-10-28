@@ -46,11 +46,11 @@ $('.slideshow-left').slick({
   tracking = $('.slick-track', $slider).css('transform');
   tracking = parseInt(tracking.split(',')[5]);
   rightTracking = $('.slideshow-right .slick-track').css('transform');
-  rightTracking = parseInt(rightTracking.split(',')[5]);
+  rightTracking = parseInt(rightTracking.split(',')[6]);
 }).on('mousemove touchmove', function(){
   if (dragging) {
     newTracking = $('.slideshow-left .slick-track').css('transform');
-    newTracking = parseInt(newTracking.split(',')[5]);
+    newTracking = parseInt(newTracking.split(',')[6]);
     diffTracking = newTracking - tracking;
     $('.slideshow-right .slick-track').css({'transform': 'matrix(1, 0, 0, 1, 0, ' + (rightTracking - diffTracking) + ')'});
   }

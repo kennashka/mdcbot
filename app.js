@@ -33,4 +33,4 @@ app.get('/funding', function(req, res) {
     res.render('page/funding');
 });
 
-app.listen(80, () => console.log('Server started...'));
+app.listen(80, () => console.log('Karolyn App Started...'));

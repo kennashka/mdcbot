@@ -1,250 +1,820 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>MDC Self Driving Car</title>
-  <link rel="stylesheet" href="./style.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Tech Society</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/agency.min.css" rel="stylesheet">
+
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html><html><head>
-    <!-- Webmaker metas -->
-    
-	<meta content="holidayalbum" name="webmaker:tags">
-    
-    
-    <!--
-    What you'll Learn
-    ******************
-    - You'll be introduced to using CSS3 styles and transitions to create a polaroid photo album.
-    - You'll be asked to create some more images in the gallery.
 
-    Tasks
-    ****************
-    Task 1) Import and use a font from Google fonts.
-    Task 2) Add some more images to your gallery.
-    -->
+<body id="page-top">
 
-    <!--         
-        A good place to start is with the title. Personalize the title of your
-        page by changing the text within the <title></title> tags.
--->
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
 
-    <!-- 
-        Task 1 - Import and use a font from Google fonts.
-        ************************************************************
-        When you want to get really creative sometimes the standard fonts are not enough. Luckily you can choose many
-        different fonts online and import them to use in your project. A great place to look is Google Fonts. https://www.google.com/fonts/
-        When you find a font you like click the Quick-use button and follow the instuctions.
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Tech Society</a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
         
-        We have selected a font below that we think works well. The first thing to do is import it into the site, you use the <link> tag to do that.
-    -->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
-    <!-- 
-        The CSS code below applies this font to the tags we want. We are selecting to add it to H2, H3 and H4 tags which are headings.
-    -->
-    <style>
-        h1, h2, h3, h4 {
-            /* The font-family style will apply our font 'Indie Flower' to the headings.*/
-            font-family: 'Indie Flower', cursive;
-        }
-    </style>
-</head>
-<body>
-    <!--
-        We start with a header tag, this defines the content for the header of the page.
-    -->
-    <header>
-        <div class="wrapper group">
-            <!-- 
-                This is a <h1> Heading. We have created a simple logo by using CSS3 borders. You can change the CSS to create an alternate logo
-                or you could try replacing the logo with an image.
-            -->
-            <h1 class="logo">MDC Self Driving Car Hardware List</h1>
-            
-            
-            <!-- 
-                This is a <h2> Heading.  It is an important tag on the page but not as important as the main <h1>.
-                The heading order goes from <h1> being the most important to <h6> being the least important.
-                    
-                Try changing the text to name your page.
-            -->
+        <div class="intro-heading text-uppercase">Where innovation begins</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+      </div>
+    </div>
+  </header>
+
+  
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light page-section" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Recent Activities</h2>
+          <h3 class="section-subheading text-muted">Recent Project Activities</h3>
         </div>
-    </header>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" height="300" width="400" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>MDC Bot Hardware</h4>
+            <p class="text-muted">Hardware components</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/02-thumbnail.png" height="300" width="400" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>MDC Bot Software</h4>
+            <p class="text-muted">Software environment.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" height="300" width="400" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>MDC Bot Testing </h4>
+            <p class="text-muted">Testing environment </p>
+          </div>
+        </div>
+       
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="wrapper group">
-        
-        <section id="content">    
-            <!--
-                Photos are inside an unordered list (ul). 
-                It behaves much like an ordered list but is more appropriate here because the order of the photos is unimportant.
-                The images are placed inside individual list items (li).
-                As the images are wrapped inside a link <a> tag they are clickable.  When clicked they will go to the address in the 'href' of the <a> tag.
-    
-                Task 2) - Add some more images to your gallery.
-                ****************************************************************************
-                
-                It's really easy to add some more photos to your gallery. Just copy the the <li></li> tags below (including the content inside) and paste under the last <li></li> tag.
-                When you've done that make sure to change the link and image src. We've explained what you need to do below:
-                
-            -->
-            <ul class="grid half-width group">
-                
-                <!-- 
-                    The picture below is contained in a <li> which h
-                -->
-                <li class="zoom-on-hover">
-                    <!--
-                        <a> This is a link tag. It creates a link to another page on the internet.
-                        If you want to change where the link goes just paste the new link between the "" below.
-                    -->
-                    <a href="https://www.amazon.com/gp/product/B06VTP8XBQ/ref=ox_sc_act_title_1?smid=AZ7YXD2PTX165&psc=1">
-                        <div class="image">
-                            <!--
-                               <img> This is the img tag. We are using images from flickr but you could use images
-                               from nearly anywhere online. If you have your own Flickr or Instagram account then you can use those.
-                               Just change the 'src' below to point to your image.
-                            -->
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/61NYviSiTaL._SX425_.jpg">
-                            <div class="caption">
-                                <h2>4 wheel 2 layer Robot Smart Car Chassis Kits with Speed Encoder for Arduino DIY</h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-              
-                <!-- 
-                    A picture 
-                -->
-                <li class="zoom-on-hover">
-                    <a href="https://www.amazon.com/gp/product/B014KMHSW6/ref=ox_sc_act_title_1?smid=A12MRQC2NA7LMA&psc=1">
-                        <div class="image">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/61WfXoPO-tL._SY355_.jpg">
-                            <div class="caption">
-                                <h2>L298N Motor Drive Controller Board Module Dual H Bridge DC Stepper For Arduino</h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                
-                <!-- 
-                    A picture 
-                -->
-                <li class="zoom-on-hover">
-                    <a href="https://www.amazon.com/gp/product/B07K13SSVS/ref=ox_sc_act_title_1?smid=A1KL49E6INLWJH&psc=1">
-                        <div class="image">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/61LYx0WfEmL._SL1500_.jpg">
-                            <div class="caption">
-                                <h2>16800mAh External Battery,2 USB Outputs Portable Charger Power Bank with Type C Input</h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                
-                <!-- 
-                    A picture 
-                -->
-                <li class="zoom-on-hover">
-                    <a href="https://www.amazon.com/gp/product/B01CMC50S0/ref=ox_sc_act_title_6?smid=AAU5UPIIBDRLP&psc=1">
-                        <div class="image">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/81HN4z3avRL._SL1500_.jpg">
-                            <div class="caption">
-                                <h2>Raspberry Pi 3 B+ Computer with Heatsinks</h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                  <li class="zoom-on-hover">
-                    <a href="https://www.amazon.com/gp/product/B01ER2SKFS/ref=ox_sc_act_title_2?smid=AYY3UP8OL9FV8&psc=1">
-                        <div class="image">
-                            <img src="https://www.raspberrypi.org/homepage-9df4b/static/621b26de7977c5b8d765b3003b341a49/bc3a8/68fe7e4cb53767ad6c033bf3b46da3452188a24a_pi-camera-front-1-1426x1080.jpg">
-                            <div class="caption">
-                                <h2>Raspberry Pi Camera Module V2-8 Megapixel,1080p</h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                  <li class="zoom-on-hover">
-                    <a href="https://www.amazon.com/gp/product/B07BQN1MNN/ref=ox_sc_act_title_5?smid=A2NBN5PD2G7LDZ&psc=1">
-                        <div class="image">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/71kho3sJZaL._SL1500_.jpg">
-                            <div class="caption">
-                                <h2>Raspberry Pi Case with Heatsink </h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                  <li class="zoom-on-hover">
-                    <a href="https://www.amazon.com/gp/product/B00I6LJ19G/ref=ox_sc_act_title_1?smid=AM0JQO74J587C&psc=1">
-                        <div class="image">
-                            <img src="https://cdn-shop.adafruit.com/1200x900/1648-00.jpg">
-                            <div class="caption">
-                                <h2>Flex Cable for Raspberry Pi Camera or Display - 300mm / 12"</h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                  <li class="zoom-on-hover">
-                    <a href="https://www.amazon.com/gp/product/B01EWOE0UU/ref=ox_sc_act_title_4?smid=A2WWHQ25ENKVJ1&psc=1">
-                        <div class="image">
-                            <img src="https://topcomphardware.com/comp/top-0-18507-0-0.jpg">
-                            <div class="caption">
-                                <h2>R3 Board ATmega328P ATMEGA16U2 with USB Cable Compatible with Arduino IDE Projects, RoHS Compliant</h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                  <li class="zoom-on-hover">
-                    <a href="https://www.amazon.com/gp/product/B0143RTB1E/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1">
-                        <div class="image">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/61N-XCvFlSL._SX466_.jpg">
-                            <div class="caption">
-                                <h2>SanDisk Ultra 16GB Class 10 SDHC UHS-I Memory Card up to 80MB/s (SDSDUNC-016G-GN6IN)</h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                  <li class="zoom-on-hover">
-                    <a href="https://www.amazon.com/gp/product/B07F58F17D/ref=ox_sc_act_title_1?smid=ATCVC199CHVK0&psc=1">
-                        <div class="image">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/812fMnPPc3L._SX425_.jpg">
-                            <div class="caption">
-                                <h2>Alligator Clip to USB Male Test Wire Adapter Red Black Wire Alligator Clip Test Cable 60cm (Pack of 2)</h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                  <li class="zoom-on-hover">
-                    <a href="https://www.amazon.com/gp/product/B01LONQ7R6/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1">
-                        <div class="image">
-                            <img src="https://m.media-amazon.com/images/S/aplus-media/sota/d64081a4-1ee3-459e-80b1-595afb5c648b._SR300,300_.jpg">
-                            <div class="caption">
-                                <h2>AmazonBasics USB Type-C to Micro-B 2.0 Short Charger Cable - 6 Inches (15.2 Centimeters) - Black</h2>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+  <!-- About -->
+  <section class="page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Timeline</h2>
+          <h3 class="section-subheading text-muted">Project Timeline</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/1.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2019-2020</h4>
+                  <h4 class="subheading">Our Humble Beginnings</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"> Our project started Fall of 2019.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/2.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>December 2019</h4>
+                  <h4 class="subheading">MDC Bot is Born</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Fund by MDC Sponsors.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/3.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>January 2020</h4>
+                  <h4 class="subheading">Commencement of Project</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Receipt of the building components.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/4.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>February 2020</h4>
+                  <h4 class="subheading">Phase One: Assembly</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Soldering the Underlying components.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/5.png" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>March 2020</h4>
+                    <h4 class="subheading">Phase Two: Software and Hardware Focused</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Soldering the Underlying components. Testing Required.</p>
+                    <p class="text-muted">Arduino Code Loaded. Testing Required.</p>
+                  </div>
+                </div>
+              </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Be Part
+                  <br>Of Our
+                  <br>Story!</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        </section>
+  <!-- Team -->
+  <section class="bg-light page-section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Members</h2>
+          <h3 class="section-subheading text-muted">These scholars make things happen.</h3>
+        </div>
+      </div>
+   
+
+      <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+              <h4> Professor John Maloney</h4>
+              <p class="text-muted">Advisor</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+              <h4>Kennashka DeSilva </h4>
+              <p class="text-muted">President</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+              <h4>Johnathan Dorecly</h4>
+              <p class="text-muted">Vice President</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+          
+
+      <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+              <h4>Sammy De La Paz </h4>
+              <p class="text-muted">Secretary</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+              <h4>Zachary Fundora </h4>
+              <p class="text-muted">Treasury</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+              <h4>Shawn Hopkins</h4>
+              <p class="text-muted">Lead Hardware Engineer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+              <div class="team-member">
+                <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+                <h4>Karolyn Bodie </h4>
+                <p class="text-muted">Student Life Facilitator</p>
+                <ul class="list-inline social-buttons">
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="team-member">
+                <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+                <h4>Alex Guido </h4>
+                <p class="text-muted">Software Engineer</p>
+                <ul class="list-inline social-buttons">
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="team-member">
+                <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+                <h4>Victor Matos</h4>
+                <p class="text-muted">Hardware Engineer</p>
+                <ul class="list-inline social-buttons">
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+
+          <div class="row">
+              <div class="col-sm-4">
+                <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+                  <h4>Sanjay</h4>
+                  <p class="text-muted">Faculty Member</p>
+                  <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+                  <h4>Jesus Gonzalez </h4>
+                  <p class="text-muted">Hardware Engineer</p>
+                  <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+                  <h4>Gilbert Jean Philippe</h4>
+                  <p class="text-muted">Hardware Engineer</p>
+                  <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="img/team/1.png" alt="">
+                    <h4>Rhauz Bathan</h4>
+                    <p class="text-muted">Hardware Engineer</p>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div> 
     
     </div>
-    
-    <!--
-        This is the footer of the page.
-        We have used it to credit the sources of the content on this page
-        if they haven't been credited elsewhere. To be a good net citizen
-        you should do the same :)
-    -->
-    <footer>
-        <div class="footer-wrap">
+  </section>
+
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Tech Society 2020</span>
         </div>
-    </footer>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/mdc.tech/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://github.com/project-sd/">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <!-- <a href="#"> </a> -->
+            </li>
+            <li class="list-inline-item">
+              <!-- <a href="#">Terms of Use</a> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Portfolio Modals -->
 
-  
-</body></html>
-<!-- partial -->
-  
+  <!-- Modal 1 -->
+  <!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <!-- <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Threads</li>
+                  <li>Category: Illustration</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">MDC Bot Software</h2>
+                <p class="item-intro text-muted">Software environment.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.png" alt="">
+                <p> Software Code for Arduino</p>
+                <p> Software Code for Raspberry Pi</p>
+                <ul class="list-inline">
+                  <li>Date: January 2020</li>
+
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">MDC Bot Testing</h2>
+                <p class="item-intro text-muted">Testing environment</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.svg" alt="">
+                <p> Testing Need For Hardware and Software Components</p>
+                <ul class="list-inline">
+                  <li>Date: March 2020</li>
+
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Lines</li>
+                  <li>Category: Branding</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Southwest</li>
+                  <li>Category: Website Design</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Window</li>
+                  <li>Category: Photography</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
 </body>
+
 </html>

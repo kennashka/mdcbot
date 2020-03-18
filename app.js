@@ -24,6 +24,9 @@ app.use( express.static( "public" ) );
 app.get('/', function(req, res) {
     res.render('page/index');
 });
+app.get('/list', function(req, res) {
+    res.render('page/list');
+});
 
 app.get('/assemble', function(req, res) {
     res.render('page/assemble');
